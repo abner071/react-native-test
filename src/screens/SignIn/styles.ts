@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { Feather } from '@expo/vector-icons';
+import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
@@ -84,10 +84,14 @@ export const SignInCell = styled.TouchableOpacity`
   border-radius: 3px;
   border: 1px solid;
   border-color: ${({ theme }) => theme.colors.secondary};
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 export const TitleCell = styled.Text`
   font-size: ${RFValue(18)}px;
   color: ${({ theme }) => theme.colors.secondary};
+  width: 100%;
+  margin-left: -25px;
   text-align: center;
 `;
